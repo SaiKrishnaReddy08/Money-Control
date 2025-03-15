@@ -1,0 +1,22 @@
+.myContainer{
+    display: flex;
+    align-items: stretch;
+    
+}
+
+
+.content{
+    display: inline-block;
+    flex-grow: 1;
+}
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid;
+
+}
+
+.summary>div{
+    padding: 50px 50px;
+}
