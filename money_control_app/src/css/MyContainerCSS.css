@@ -1,13 +1,14 @@
 .myContainer{
     display: flex;
-    align-items: stretch;
-    
+    flex-grow: 1;
 }
 
 
 .content{
-    display: inline-block;
+    display: flex;
     flex-grow: 1;
+    padding: 10px;
+    background-color: rgb(206, 218, 218);
 }
 
 .summary{
@@ -19,4 +20,28 @@
 
 .summary>div{
     padding: 50px 50px;
+}
+
+.addExpenseBox{
+    box-sizing: border-box;
+    border: 1px solid ;
+    border-radius: 5px;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 80px 200px;
+    flex-grow: 1;
+    place-content: center;
+    gap: 10px 20px;
+    align-items: center;
+}
+
+input{
+    height: 30px;
+}
+
+.addExpenseBtn{
+    padding: 10px;
+    margin:20px;
+    grid-column: 1 / span 2;
+    height: auto;
 }

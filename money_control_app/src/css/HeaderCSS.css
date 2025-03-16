@@ -1,11 +1,15 @@
-li{
+nav{
+    text-align: center;
+}
+
+#navbar li{
     list-style-type: none;
     border: 1px solid;
     border-radius: 5px;
     
 }
 
-li a{
+#navbar li a{
     color: black;
     display: block;
     width: 100px;
@@ -23,4 +27,14 @@ nav{
     justify-content: center;
     gap: 20px;
     border-bottom: 1px solid;
+}
+
+img{
+    height: 20px;
+    width: 20px;
+}
+
+.year-month-indicator{
+    display: flex;
+    align-items: center;
 }

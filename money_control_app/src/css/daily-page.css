@@ -1,0 +1,25 @@
+.daily-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 60px;
+}
+
+.daily-expense-box{
+    padding: 5px 0px;
+    background-color: rgb(247, 250, 248);
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+
+.expense-item{
+    display: flex;
+    padding:5px;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    border-radius: 7px;
+}
