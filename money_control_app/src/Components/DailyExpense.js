@@ -7,10 +7,10 @@ const DailyExpense= ({date, month, year, expenses}) => {
             <li>{date} {MonthName[month]} {year}</li>
             <ul>
                 {
-                    expenses.map((expense)=>{
-                        return <li className="expense-item">
-                            <i>{expense.category} </i>
-                            <b style={{color:expense.type==="expense"?"red":"green"}}>{expense.amount}</b>
+                    Object.entries(expenses).map((expense)=>{
+                        return <li className="expense-item" key={expense[0]}>
+                            <i>{expense[1].category} </i>
+                            <b style={{color:expense[1].type==="expense"?"red":"green"}}>{expense[1].amount}</b>
                         </li>
                     })
                 }

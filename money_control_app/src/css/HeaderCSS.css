@@ -1,5 +1,6 @@
-nav{
+#navbar{
     text-align: center;
+    position: relative;
 }
 
 #navbar li{
@@ -12,7 +13,7 @@ nav{
 #navbar li a{
     color: black;
     display: block;
-    width: 100px;
+    min-width: 100px;
     padding: 5px 10px;
     text-decoration: none;
 }
@@ -37,4 +38,8 @@ img{
 .year-month-indicator{
     display: flex;
     align-items: center;
+    position: absolute;
+    margin-top: 5px;
+    left : 10px;
+    
 }

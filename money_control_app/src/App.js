@@ -5,8 +5,8 @@ import MyContainer from './Components/MyContainer';
 import { useEffect, useState } from 'react';
 
 function App() {
+  const [mode, setMode] = useState("mothly");
   const [date, setDate] = useState({day:0, month:1, year:0});
-
   useEffect(()=>{
     setDate(()=>{
       const today = new Date();
@@ -17,8 +17,8 @@ function App() {
 
   return (
     <div className="App">
-      <MyHeader date={date} setDate={setDate} />
-      <MyContainer date={date} />
+      <MyHeader date={date} setDate={setDate} mode={mode} setMode={setMode}/>
+      <MyContainer date={date} mode={mode}/>
     </div>
   );
 }
